@@ -1,0 +1,1 @@
+sudo code /var/www/html/E_Commerce --user-data-dir='.' --no-sandbox
