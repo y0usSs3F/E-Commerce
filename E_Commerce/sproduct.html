@@ -1,0 +1,310 @@
+<!-- <?php
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+
+// Start the session
+session_start();
+
+// Check if the user is not logged in (session variable is not set)
+if (!isset($_SESSION['customer']) && !isset($_SESSION['seller']) && !isset($_SESSION['viewer'])) {
+    // Redirect to the signin.html page
+    header("Location: ./signin/signin.html");
+    exit();
+}
+?> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- header start -->
+    <header id="header">
+        <img src="./img/logo.png" alt="logo" class="logo">
+
+        <nav id="navbar">
+            <a href="index.php">Home</a>
+            <a class="active" href="shop.php">Shop</a>
+            <a href="blog.php">Blog</a>
+            <a href="about.php">About</a>
+            <a href="contact.php">Contact</a>
+            <a href="signin/signin.html">Account</a>
+            <a href="cart.php"><i class="ri-shopping-bag-line"></i></a>
+        </nav>
+
+        <i class="ri-menu-3-line" id="menu-btn"></i>
+
+
+    </header>
+    <!-- header end -->
+    
+  <section id="pro-details">
+    <div class="pro-content">
+        <div class="pro-left">
+            <img src="img/products/f1.jpg" alt="" class="pro-image" id="pro-image">
+            <div class="row" id="image-container">
+                <img src="img/products/f2.jpg" alt="" class="img">
+                <img src="img/products/f3.jpg" alt="" class="img">
+                <img src="img/products/f4.jpg" alt="" class="img">
+                <img src="img/products/f5.jpg" alt="" class="img">
+            </div>
+        </div>
+        <div class="pro-right">
+            <b>Home/T-shirt</b>
+            <h2>Men's Fashion T-Shirt</h2>
+            <select>
+                <option>Select Size</option>
+                <option>L</option>
+                <option>XL</option>
+                <option>M</option>
+                <option>SM</option>
+            </select>
+            <div>
+                <input type="number" name="quantity" id="quantity" value="1">
+                <button>Add To Cart</button>
+            </div>
+            <h4>Product Details</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, quidem quas? Quia velit at ratione ea id facilis voluptas, quas odio ipsum accusamus dicta nesciunt assumenda fugiat, in quae. Alias? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, quidem quas? Quia velit at ratione ea id facilis voluptas, quas odio ipsum accusamus dicta nesciunt assumenda fugiat, in quae. Alias?</p>
+        </div>
+    </div>
+  </section>   
+  <section id="feature-product">
+    <h1>Featured Products</h1>
+    <p>Summer Collection New Modern Design</p>
+    <div class="product-container">
+        <div class="product-box">
+            <img src="img/products/f1.jpg" alt="product">
+            <div class="des">
+                <span>addidas</span>
+                <h5>Cartoon Astronaut T-shirts</h5>
+                <div class="star">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <div class="pro-lower">
+                    <h4>$78</h4>
+                    <a href="#">
+                        <i class="ri-shopping-cart-line"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="product-box">
+            <img src="img/products/f2.jpg" alt="product">
+            <div class="des">
+                <span>addidas</span>
+                <h5>Cartoon Astronaut T-shirts</h5>
+                <div class="star">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <div class="pro-lower">
+                    <h4>$78</h4>
+                    <a href="#">
+                        <i class="ri-shopping-cart-line"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="product-box">
+            <img src="img/products/f3.jpg" alt="product">
+            <div class="des">
+                <span>addidas</span>
+                <h5>Cartoon Astronaut T-shirts</h5>
+                <div class="star">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <div class="pro-lower">
+                    <h4>$78</h4>
+                    <a href="#">
+                        <i class="ri-shopping-cart-line"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="product-box">
+            <img src="img/products/f4.jpg" alt="product">
+            <div class="des">
+                <span>addidas</span>
+                <h5>Cartoon Astronaut T-shirts</h5>
+                <div class="star">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <div class="pro-lower">
+                    <h4>$78</h4>
+                    <a href="#">
+                        <i class="ri-shopping-cart-line"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="product-box">
+            <img src="img/products/f5.jpg" alt="product">
+            <div class="des">
+                <span>addidas</span>
+                <h5>Cartoon Astronaut T-shirts</h5>
+                <div class="star">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <div class="pro-lower">
+                    <h4>$78</h4>
+                    <a href="#">
+                        <i class="ri-shopping-cart-line"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="product-box">
+            <img src="img/products/f6.jpg" alt="product">
+            <div class="des">
+                <span>addidas</span>
+                <h5>Cartoon Astronaut T-shirts</h5>
+                <div class="star">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <div class="pro-lower">
+                    <h4>$78</h4>
+                    <a href="#">
+                        <i class="ri-shopping-cart-line"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="product-box">
+            <img src="img/products/f7.jpg" alt="product">
+            <div class="des">
+                <span>addidas</span>
+                <h5>Cartoon Astronaut T-shirts</h5>
+                <div class="star">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <div class="pro-lower">
+                    <h4>$78</h4>
+                    <a href="#">
+                        <i class="ri-shopping-cart-line"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="product-box">
+            <img src="img/products/f8.jpg" alt="product">
+            <div class="des">
+                <span>addidas</span>
+                <h5>Cartoon Astronaut T-shirts</h5>
+                <div class="star">
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                    <i class="ri-star-fill"></i>
+                </div>
+                <div class="pro-lower">
+                    <h4>$78</h4>
+                    <a href="#">
+                        <i class="ri-shopping-cart-line"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+   
+    <section id="newsletter">
+       <div class="container">
+        <div class="newstext">
+            <h4>Sign Up For Newsletters</h4>
+            <p>Get E-mail updates about our latest shop and <span>official offers.</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Enter email address">
+            <button>Sign Up</button>
+        </div>
+       </div>
+    </section>
+
+      <footer>
+        <div class="container">
+            <div class="col">
+            <img src="img/logo.png" alt="logo" width="150px">
+            <b>Contact</b>
+           <p><strong>Address:</strong>562 Wellington Road, Street</p>
+           <p><strong>Phone:</strong>+0193749844</p>
+           <p><strong>Hours:</strong>10:00 - 18:00 Mon - Sat</p>
+                <b>Follow Us</b>
+                <div class="follow">
+                    <a href="#"><i class="ri-facebook-fill"></i></a>
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-fill"></i></a>
+                    <a href="#"><i class="ri-pinterest-fill"></i></a>
+                    <a href="#"><i class="ri-youtube-fill"></i></a>
+                </div>
+            </div>
+            <div class="col">
+               <h4>About</h4>
+               <a href="#">About Us</a>
+               <a href="#">Delivery Information</a>
+               <a href="#">Privacy Policy</a>
+               <a href="#">Terms & Conditions</a>
+               <a href="#">Contact Us</a>
+            </div>
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="#">Sign In</a>
+                <a href="#">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+            <div class="col">
+                <h4>Install App</h4>
+                <a href="#">From App Store or Google Play</a>
+                <div class="app">
+                    <img src="./img/pay/app.jpg" alt="">
+                    <img src="./img/pay/play.jpg" alt="">
+                </div>
+                <a href="#">Secured Payment Gateways</a>
+                
+                <img src="img/pay/pay.png" alt="" width="200px">
+                
+            </div>
+        </div>
+        <p class="lo-footer">&copy; 2023, Dangerous Team </p>
+      </footer>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
