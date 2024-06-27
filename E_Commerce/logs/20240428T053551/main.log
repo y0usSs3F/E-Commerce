@@ -1,0 +1,10 @@
+2024-04-28 05:35:51.916 [info] update#setState idle
+2024-04-28 05:35:56.497 [error] update#isLatestVersion(): failed to check for updates
+2024-04-28 05:35:56.498 [error] Error: net::ERR_NAME_NOT_RESOLVED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:49876)
+    at SimpleURLLoaderWrapper.emit (node:events:513:28)
+2024-04-28 05:36:21.882 [info] update#setState checking for updates
+2024-04-28 05:36:21.898 [error] Error: net::ERR_NAME_NOT_RESOLVED
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:2:49876)
+    at SimpleURLLoaderWrapper.emit (node:events:513:28)
+2024-04-28 05:36:21.899 [info] update#setState idle
